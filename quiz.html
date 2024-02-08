@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Challenge</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="quiz-container">
+            <h1>Quiz Challenge</h1>
+            <div id="question"></div>
+            <ul id="options" class="options"></ul>
+            <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+            
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p>Your Score: <span id="score">0</span></p>
+            <button id="ok" class="ok" onclick="ok">ok</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
